@@ -3,9 +3,9 @@
 
 2. The full form of IDE is "Integrated Development Environment".
 
-3. The difference between a text editor and a code editor id the following.
-  A text editor just allows the user to type in text and store it as a text file.
-  A code editor not only performs the function of a text editor, but it also includes features to help the user type code in some programming language.
+3. The difference between a text editor and a code editor is the following.
+  A text editor just allows the user to type in text and store it as a text file as well as edit the file later.
+  A code editor not only performs the function of a text editor, but it also includes features to help the user type and format code in some programming language.
 
 4. To create software using the C language the basic steps are the following.
   First, the user must create a source file or files written and formatted in the C language (with extension ".c")
@@ -14,7 +14,7 @@
 5. Upon exploration on the internet the following answers have been found:
     a. As of June 2022, the latest version of C language is C17.
     
-    b. C language was developed in 1972 by Dennis Ritchie, an employee of AT&T in USA.
+    b. C language was developed in 1972 by Dennis Ritchie, an employee of AT&T in the USA.
     
     c. The difference between system software and application software is the following.
       System software deals with management of the computer hardware resources like memory, processors and drivers. As such, it is what makes up the operating system on the computer.
@@ -26,5 +26,5 @@
       Note that this remainder can either be 0 or 1 since you are dividing by 2.
       Now perform the same division by 2 for the quotient obtained in the previous step, and get a new remainder.
       Write down the new remainder to the left of the previous remainder in the binary number.
-      Perform this procedure for every successive new quotient and add the corresponding remainder to the left of the binary number in order until the quotient is 0.
+      Perform this procedure for every successive new quotient and add the corresponding remainder to the left of the binary number in order until the quotient reaches 0.
       Now the binary number is complete.
