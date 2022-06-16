@@ -1,1 +1,30 @@
-a new file
+1. Computers understand only binary language since the internal RAM memory device of a computer has a series of capacitors, each of which can be in one of 2 distinct states, either full of charge or empty.
+  This means that every bit of information the computer stores in memory at a time is stored as a sequence of empty and full charges which can be abstracted as a sequence of binary digits i.e. 0s and 1s.
+
+2. The full form of IDE is "Integrated Development Environment".
+
+3. The difference between a text editor and a code editor id the following.
+  A text editor just allows the user to type in text and store it as a text file.
+  A code editor not only performs the function of a text editor, but it also includes features to help the user type code in some programming language.
+
+4. To create software using the C language the basic steps are the following.
+  First, the user must create a source file or files written and formatted in the C language (with extension ".c")
+  Then the user must build the source file or files into an executable file by compiling them using a C compiler e.g. gcc.
+
+5. Upon exploration on the internet the following answers have been found:
+    a. As of June 2022, the latest version of C language is C17.
+    
+    b. C language was developed in 1972 by Dennis Ritchie, an employee of AT&T in USA.
+    
+    c. The difference between system software and application software is the following.
+      System software deals with management of the computer hardware resources like memory, processors and drivers. As such, it is what makes up the operating system on the computer.
+      Application software can be installed on top of the system software to run specific programs for the user to make use of. It depends on the system software to operate.
+      
+    d. Coverting a decimal number to binary format can be done using the following procedure.
+      Take the decimal number and divide it by 2 to produce a quotient and remainder.
+      Write down the remainder as the first digit (unit digit) of the binary number.
+      Note that this remainder can either be 0 or 1 since you are dividing by 2.
+      Now perform the same division by 2 for the quotient obtained in the previous step, and get a new remainder.
+      Write down the new remainder to the left of the previous remainder in the binary number.
+      Perform this procedure for every successive new quotient and add the corresponding remainder to the left of the binary number in order until the quotient is 0.
+      Now the binary number is complete.
