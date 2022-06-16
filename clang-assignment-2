@@ -1,0 +1,20 @@
+1. Among the given constants, the following are real constants: 4.5, 3.0, -0.0.
+
+2. Among the given words the following are not keywords: dynamic, define, is, this, super.
+
+3. (It appears there is no list of prospective variable names to choose from, so this question can't be answered.)
+  A variable name in C must contain only ASCII alphabetic letters, numerals and underscore. The first character in the variable name mustn't be a numeral.
+
+4. No. In C we can't make a variable with the name "switch" since switch is a keyword.
+
+5. Keywords are defined in the compiler.
+
+6. Variables are created in the RAM of the computer hardware.
+
+7. C language was developed by Dennis Ritchie of AT&T, Bell laboratories, USA.
+
+8. C language was first developed in 1972.
+
+9. UNIX is the name of the operating system responsible for the inception of C language.
+
+10. C language is both a high-level and a low-level programming language.
