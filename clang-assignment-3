@@ -1,0 +1,31 @@
+1. The primitive data types in C language are: int, char, float and double.
+
+2. Declaration statements can be written outside a function body.
+
+3. A float type variable takes up 4 bytes of memory.
+
+4. The value of any uninitialized variable is a Garbage value which is unknown to the user.
+
+5. The difference between float and double type variables is their size and thus precision.
+  A float type variable occupies 4 bytes of memory and a double type takes up 8 bytes.
+  Consequently, a double type variable has double the precision of a float type variable.
+
+6. The full form of ASCII is: American Standard Code for Information Interchange.
+
+7. A keyword is a token used with a predetermined function as defined by the C language compiler.
+  A function is a block of statements that has a name to it.
+
+8. Upon exploration on the internet, the following results were found:
+  Type modifiers are keywords in C which can be used to modify the default properties of primitive data types.
+  Such modifications of data types are related to changing their size in memory or their sign (negative/positive).
+  The type modifiers in C are: long, short, signed and unsigned.
+  The long modifier can be used on int type or double type to make a variable of larger size than the regular int or double types i.e. extra 2 bytes in each case.
+  The short modifier can be used on the int type to make a variable of smaller size than the regular int type i.e. only 2 bytes rather than 4.
+  The signed modifier can be used on int type or char type to make a variable store either positive or negative values (or zero value) of the respective type.
+  The unsigned modifier can be used on int type or char type to make a variable store only positive values (or zero value) of respective type.
+  If not mentioned explicitly, int type and char type produce signed variables.
+
+9. In C language, you CAN assign a character constant to an int variable.
+  In such a case the corresponding index number of the character constant according to ASCII encoding is stored in the int variable.
+
+10. False. Not every block of code is a function although all functions are blocks of code.
