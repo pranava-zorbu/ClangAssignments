@@ -1,0 +1,89 @@
+1. C program to print "Hello Students" on screen:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("Hello Students");
+  }
+
+2. C program to print Hello on one line and Students on next line:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("Hello\nStudents");
+  }
+
+3. C program to print "MySirG" on screen:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("\"MySirG\"");
+  }
+
+4. C program to print "Teacher's Day" on screen:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("\"Teacher\'s Day\"");
+  }
+
+5. C program to print \n on screen:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("\\n");
+  }
+
+6. C program to print %d on screen:
+  
+  #include <stdio.h>
+  int main()
+  {
+    printf("%%d");
+  }
+
+7. C program containing declaration of 3 variables of types int, char and float respectively with arbitrary values, and to print these 3 variables' values:
+  
+  #include <stdio.h>
+  int main()
+  {
+    int i = 3;
+    char c = 'm';
+    float f = 8.75;
+    printf("%d %c %f", i, c, f);
+  }
+
+8. Upon searching the internet, the following results were found:
+  The %i format specifier is used to print the value of and int variable, explicitly using decimal base i.e. base 10.
+  The %g format specifier is used to print a real value like float or double variables,
+    but if the exponential notation of the real value is shorter in length than the plain representation, it prints the exponential form.
+  The %lf format specifier is used to print the value of a double variable.
+
+9. C program to print character stored in a char variable as well as its ASCII index code:
+  
+  #include <stdio.h>
+  int main()
+  {
+    char c = 'm'; // arbitrarily chosen letter
+    printf("%c %d", c, c);
+  }
+
+10. To convert a decimal integer to binary form, the following procedure can be used:
+  Take the decimal number and divide it by 2 to produce a quotient and remainder.
+  Write down the remainder as the unit digit of the Binary number.
+  Take the quotient obtained in the previous step an divide it by 2 to get a new quotient and remainder.
+  Add the new remainder as a digit to the left of the Binary number.
+  Perform this division and writing of remainder for every successive new quotient until the new quotient becomes 0.
+  The string of remainders produced thus is the Binary form of the decimal number.
+  
+  To convert a binary integer to decimal form, the following procedure can be used:
+  Take the binary number and assign a place value for each digit in the following way.
+  The place value for the unit digit is 1 and the place value for every other digit is twice the place value of the digit to its right.
+  Consequently, the sequence of place values starting from the unit digit going leftward will be like: 1, 2, 4, 8, 16 and so on.
+  Produce a subtotal for each digit by multiplying the digit by its place value.
+  Add up all the subtotals to get the decimal form of the binary number.
+  
