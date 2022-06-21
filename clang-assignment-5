@@ -1,0 +1,141 @@
+1. program to calculate the sum of 2 numbers (integers):
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int a,b,ans;
+    printf("Please enter 2 numbers:\n");
+    scanf("%d %d", &a, &b);
+    ans = a + b;
+    printf("The sum of %d and %d equals %d\n", a, b, ans);
+    getch();
+  }
+
+2. program to calculate the area of a circle:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int r;
+    float ans;
+    printf("Please enter radius of your circle:\n");
+    scanf("%d", &r);
+    ans = 3.14159 * r * r;
+    printf("The area of circle with radius %d equals %f\n", r, ans);
+    getch();
+  }
+
+3. program to calculate the volume of a cuboid:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int h,w,b,ans;
+    printf("Please enter height, width and breadth of cuboid:\n");
+    scanf("%d %d %d", &h, &w, &b);
+    ans = h * w * b;
+    printf("The volume of cuboid with height %d, width %d and breadth %d, equals %d\n", h, w, b, ans);
+    getch();
+  }
+
+4. program to calculate simple interest:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int p,t;
+    float r,ans;
+    printf("Please enter principal amount, interest rate and time in years:\n");
+    scanf("%d %f %d", &p, &r, &t);
+    ans = p * r * t;
+    printf("The interest added to principal amount %d, at the rate of %f for %d years elapsed, equals %f\n", p, r, t, ans);
+    getch();
+  }
+
+5. program to calculate area of a rectangle:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int h,w,ans;
+    printf("Please enter height and width of rectangle:\n");
+    scanf("%d %d", &h, &w);
+    ans = h * w;
+    printf("The area of rectangle with height %d and width %d equals %d\n", h, w, ans);
+    getch();
+  }
+
+6. program to calculate the average of 3 numbers:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int a,b,c;
+    float ans;
+    printf("Please enter 3 numbers:\n");
+    scanf("%d %d %d", &a, &b, &c);
+    ans = (a + b + c) / 3;
+    printf("The average of the numbers %d, %d and %d equals %f\n", a, b, c, ans);
+    getch();
+  }
+
+7. program to calculate square of a given number:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int a,ans;
+    printf("Please enter a number:\n");
+    scanf("%d", &a);
+    ans = a * a;
+    printf("The square of %d equals %d\n", a, ans);
+    getch();
+  }
+  
+8. program to take character as input and print its ASCII code:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    printf("Please enter an ASCII character:\n");
+    char c = getch();
+    printf("The ASCII code of character \'%c\' equals %d\n", c, c);
+    getch();
+  }
+
+9. program to calculate the profit percentage upon selling a product:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    float cp,sp,ans;
+    printf("Please enter the cost price and selling price:\n");
+    scanf("%f %f", &cp, &sp);
+    ans = ((sp - cp) / sp) * 100;
+    printf("The profit percentage obtained by selling something of cost %f at a price of %f equals %f%%\n", cp, sp, ans);
+    getch();
+  }
+  
+10. program to calculate area of a traingle where base and height are given:
+  
+  #include <stdio.h>
+  #include <conio.h>
+  int main()
+  {
+    int b,h;
+    float ans;
+    printf("Please enter base and height of the triangle:\n");
+    scanf("%d %d", &b, &h);
+    ans = (b * h) / 2;
+    printf("The area of triangle with base %d and height %d equals %f\n", b, h, ans);
+    getch();
+  }
