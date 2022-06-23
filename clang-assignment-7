@@ -1,0 +1,175 @@
+1. program to check whether a given number (integer) is positive or non-positive:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i;
+		printf("Please enter a number: ");
+		scanf("%d", &i);
+		printf(i>0 ? "Your number is positive\n" : "Your number is non-positive\n");
+		getch();
+	}
+
+2. program to check whether a given number is divisible by 5 or not:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i;
+		printf("Please enter a number: ");
+		scanf("%d", &i);
+		printf(i%5 ? "Your number is not divisible by 5\n" : "Your number is divisible by 5\n");
+		getch();
+	}
+	
+3. program to check whether a given number is even or odd:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i;
+		printf("Please enter a number: ");
+		scanf("%d", &i);
+		printf(i%2 ? "Your number is odd\n" : "Your number is even\n");
+		getch();
+	}
+	
+4. program to check whether a given number is even or odd without using modulus operator:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i;
+		printf("Please enter a number: ");
+		scanf("%d", &i);
+		printf(i-(i/2*2) ? "Your number is odd\n" : "Your number is even\n");
+		getch();
+	}
+
+5. program to check whether a given number is 3 digits long or not:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i;
+		printf("Please enter a number: ");
+		scanf("%d", &i);
+		printf(i>99 && i<1000 ? "Your number is 3 digits long\n" : "Your number is not 3 digits long\n");
+		getch();
+	}
+
+6. program to find the greater between 2 numbers or print 1 number if both are the same:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x,y;
+		printf("Please enter 2 numbers: ");
+		scanf("%d %d", &x, &y);
+		if (x >= y)
+		{
+			printf("%d", x);
+		}
+		else
+		{
+			printf("%d", y);
+		}
+		getch();
+	}
+
+7. program to take the cost price and selling price of something and calculate the profit or loss percentage:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		float cp,sp,pct;
+		printf("Please enter the cost price and selling price: ");
+		scanf("%f %f", &cp, &sp);
+		if (cp <= sp)
+		{
+			pct = (sp - cp) / cp * 100;
+			printf("profit percentage is %f%%", pct);
+		}
+		else
+		{
+			pct = (cp - sp) / cp * 100;
+			printf("loss percentage is %f%%", pct);
+		}
+		getch();
+	}
+
+8. program to take marks of 5 subjects and assess whether each subject has passed or failed (passing marks is 33/100):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int s1,s2,s3,s4,s5;
+		printf("Please enter the marks out of 100 of the 5 subjects: ");
+		scanf("%d %d %d %d %d", &s1, &s2, &s3, &s4, &s5);
+		printf(s1>=33 ? "1st subject has PASSED\n" : "1st subject has FAILED\n");
+		printf(s2>=33 ? "2nd subject has PASSED\n" : "2nd subject has FAILED\n");
+		printf(s3>=33 ? "3rd subject has PASSED\n" : "3rd subject has FAILED\n");
+		printf(s4>=33 ? "4th subject has PASSED\n" : "4th subject has FAILED\n");
+		printf(s5>=33 ? "5th subject has PASSED\n" : "5th subject has FAILED\n");
+		getch();
+	}
+
+9. program to check whether a given alphabetic letter is uppercase or lowercase:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		char c;
+		printf("Please enter an alphabetic letter: ");
+		scanf("%c", &c);
+		if(c>='A' && c<='Z')
+		{
+			printf("Your letter is uppercase\n");
+		}
+		if(c>='a' && c<='z')
+		{
+			printf("Your letter is lowercase\n");
+		}
+		getch();
+	}
+
+10. program to take the age and investment amount of a client and output their maturity amount (based on details given in the original question):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int age,inv; //age and investment amount
+		printf("Please enter the age and investment amount of the client: ");
+		scanf("%d %d", &age, &inv);
+		if (inv>=10000 && inv<=100000)
+		{
+			if (age<18 || age>55)
+			{
+				printf("Age must be between 18 and 55\n");
+			}
+			else
+			{
+				int per; //policy period in years
+				if (age>=18 && age<=25) {per = 30;}
+				if (age>25 && age<=40) {per = 20;}
+				if (age>40 && age<=55) {per = 10;}
+				float mat = inv * (1 + 0.05 * per); //maturity amount
+				printf("The client\'s maturity amount will be %f\n", mat);
+			}
+		}
+		else
+		{
+			printf("Investment amount must be between 10000 and 100000\n");
+		}
+		getch();
+	}
