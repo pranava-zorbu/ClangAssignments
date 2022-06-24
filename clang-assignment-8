@@ -1,0 +1,195 @@
+1. program to check whether a given number is divisible by 3 and by 2:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x;
+		printf("Please enter a number: ");
+		scanf("%d", &x);
+		printf(x%3==0 && x%2==0 ? "Your number IS divisible by 3 and by 2\n" : "Your number IS NOT divisible by 3 AND by 2\n");
+	}
+	
+2. program to check whether a given number is divisible by 7 or by 3:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x;
+		printf("Please enter a number: ");
+		scanf("%d", &x);
+		if(x%7==0 && x%3==0)
+			printf("Your number is divisible by BOTH 7 and by 3\n");
+		else if(x%7==0)
+			printf("Your number is divisible by 7\n");
+		else if(x%3==0)
+			printf("Your number is divisible by 3\n");
+		else
+			printf("Your number is divisible by NEITHER 7 nor by 3\n");
+		getch();
+	}
+
+3. program to check whether a given number is positive, negative or zero:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x;
+		printf("Please enter a number: ");
+		scanf("%d", &x);
+		if(x>0)
+			printf("Your number is POSITIVE\n");
+		else if(x<0)
+			printf("Your number is NEGATIVE\n");
+		else
+			printf("Your number is ZERO\n");
+		getch();
+	}
+
+4. program to check whether a given year is a leap year or not:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int y;
+		printf("Please enter a year: ");
+		scanf("%d", &y);
+		if(y%4!=0)
+			printf("it is NOT a leap year\n");
+		else if(y%100!=0)
+			printf("it IS a leap year\n");
+		else if(y%400!=0)
+			printf("it is NOT a leap year\n");
+		else
+			printf("it IS a leap year\n");
+		getch();
+	}
+
+5. program to find the greatest among 3 given numbers:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x,y,z;
+		printf("Please enter 3 numbers: ");
+		scanf("%d %d %d", &x, &y, &z);
+		if(x>=y && x>=z)
+			printf("The greatest number is %d", x);
+		else if(y>=x && y>=z)
+			printf("The greatest number is %d", y);
+		else
+			printf("The greatest number is %d", z);
+		getch();
+	}
+
+6. program to check whether a given character is an uppercase letter, lowercase letter, numeric digit or other special character:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		char c;
+		printf("Please enter a character: ");
+		scanf("%c", &c);
+		if(c>='A' && c<='Z')
+			printf("It is an UPPERCASE letter\n");
+		else if(c>='a' && c<='z')
+			printf("It is an LOWERCASE letter\n");
+		else if(c>='0' && c<='9')
+			printf("it is a NUMERIC digit\n");
+		else
+			printf("it is a SPECIAL character\n");
+		getch();
+	}
+
+7. program that takes the side lengths of a triangle and assesses if it is a valid triangle or not:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int x,y,z;
+		printf("Please enter 3 side lengths: ");
+		scanf("%d %d %d", &x, &y, &z);
+		if(x+y<=z)
+			printf("The 3 sides DO NOT form a valid triangle\n");
+		else if(y+z<=x)
+			printf("The 3 sides DO NOT form a valid triangle\n");
+		else if(z+x<=y)
+			printf("The 3 sides DO NOT form a valid triangle\n");
+		else
+			printf("The 3 sides form a VALID triangle\n");
+		getch();
+	}
+
+8. program to take a month number as input and display number of days in the month:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int m;
+		printf("Please enter a month\'s number: ");
+		scanf("%d", &m);
+		if(m<1 || m>12)
+			printf("Invalid month number\n");
+		else if(m==2)
+			printf("The month has 28 days\n");
+		else if(m<8 && m%2==0)
+			printf("The month has 30 days\n");
+		else if(m<8 && m%2==1)
+			printf("The month has 31 days\n");
+		else if(m>7 && m%2==0)
+			printf("The month has 31 days\n");
+		else
+			printf("The month has 30 days\n");
+		getch();
+	}
+
+9. program to find the nature of roots of a quadratic equation:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int a,b,c;
+		printf("Please enter the coefficients (a,b,c) of your quadratic equation (standard form): ");
+		scanf("%d %d %d", &a, &b, &c);
+		int d = (b*b)-(4*a*c); //quadratic discriminant
+		if(d>0)
+			printf("Your quadratic equation has 2 REAL roots\n");
+		else if(d<0)
+			printf("Your quadratic equation has 2 COMPLEX roots\n");
+		else
+			printf("Your quadratic equation has 1 REAL root\n");
+		getch();
+	}
+
+10. program to take marks of 5 subjects and calculate the student's grade (according to details in the original question):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int ph,ch,bi,ma,cs;
+		printf("Please enter the student\'s marks (out of 100) for 5 subjects: ");
+		scanf("%d %d %d %d %d", &ph, &ch, &bi, &ma, &cs);
+		float p = (ph+ch+bi+ma+cs)/5.0; //student percentage
+		if(p>=90)
+			printf("Grade A\n");
+		else if(p>=80)
+			printf("Grade B\n");
+		else if(p>=70)
+			printf("Grade C\n");
+		else if(p>=60)
+			printf("Grade D\n");
+		else if(p>=40)
+			printf("Grade E\n");
+		else
+			printf("Grade F\n");
+		getch();
+	}
