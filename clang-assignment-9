@@ -1,0 +1,149 @@
+1. program to print MySirG 10 times on screen:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1;
+		while(i<=10)
+		{
+			printf("MySirG\n");
+			i++;
+		}
+		getch();
+	}
+
+2. program to print the first 10 natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1;
+		while(i<=10)
+		{
+			printf("%d\n",i);
+			i++;
+		}
+		getch();
+	}
+
+3. program to print first 10 natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=10;
+		while(i>=1)
+		{
+			printf("%d\n",i);
+			i--;
+		}
+		getch();
+	}
+
+4. program to print first 10 even natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=2;
+		while(i<=20)
+		{
+			printf("%d\n",i);
+			i += 2;
+		}
+		getch();
+	}
+
+5. program to print first 10 even natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=20;
+		while(i>=2)
+		{
+			printf("%d\n",i);
+			i -= 2;
+		}
+		getch();
+	}
+
+6. program to print first 10 odd natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1;
+		while(i<=19)
+		{
+			printf("%d\n",i);
+			i += 2;
+		}
+		getch();
+	}
+
+7. program to print the squares of first 10 natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1;
+		while(i<=10)
+		{
+			printf("%d\n",i*i);
+			i++;
+		}
+		getch();
+	}
+
+8. program to print the cubes of of first 10 natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1;
+		while(i<=10)
+		{
+			printf("%d\n",i*i*i);
+			i++;
+		}
+		getch();
+	}
+
+9. program to print the squares of first 10 natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=10;
+		while(i>=1)
+		{
+			printf("%d\n",i*i);
+			i--;
+		}
+		getch();
+	}
+
+10. program to print the cubes of first 10 natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=10;
+		while(i>=1)
+		{
+			printf("%d\n",i*i*i);
+			i--;
+		}
+		getch();
+	}
