@@ -1,0 +1,169 @@
+1. program to print MySirG N times on screen:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("MySirG\n");
+			i++;
+		}
+		getch();
+	}
+
+2. program to print first N natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("%d\n",i);
+			i++;
+		}
+		getch();
+	}
+
+3. program to print first N natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=0,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<n)
+		{
+			printf("%d\n",(n-i));
+			i++;
+		}
+		getch();
+	}
+
+4. program to print first N even natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("%d\n",(2*i));
+			i++;
+		}
+		getch();
+	}
+
+5. program to print first N even natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=0,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<n)
+		{
+			printf("%d\n",2*(n-i));
+			i++;
+		}
+		getch();
+	}
+
+6. program to print first N odd natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("%d\n",(2*i)-1);
+			i++;
+		}
+		getch();
+	}
+
+7. program to print the squares of first N natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("%d\n",(i*i));
+			i++;
+		}
+		getch();
+	}
+	
+8. program to print the cubes of first N natural numbers (in order):
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=1,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<=n)
+		{
+			printf("%d\n",(i*i*i));
+			i++;
+		}
+		getch();
+	}
+
+9. program to print the squares of first N natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=0,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<n)
+		{
+			printf("%d\n",(n-i)*(n-i));
+			i++;
+		}
+		getch();
+	}
+
+10. program to print the cubes of first N natural numbers in reverse order:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int i=0,n;
+		printf("Please enter value of N: ");
+		scanf("%d",&n);
+		while(i<n)
+		{
+			printf("%d\n",(n-i)*(n-i)*(n-i));
+			i++;
+		}
+		getch();
+	}
