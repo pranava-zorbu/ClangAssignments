@@ -1,0 +1,185 @@
+1. program to take month number as input and display number of days in the month:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int m;
+		printf("Please enter a month number: ");
+		scanf("%d", &m);
+		switch(m)
+		{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				printf("Your month has 31 days\n");
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				printf("Your month has 30 days\n");
+				break;
+			case 2:
+				printf("Your month has 28 or 29 days\n");
+				break;
+			default:
+				printf("Invalid month number\n");
+		}
+		getch();
+	}
+
+2. menu driven program with following options: (Addition, Subtraction, Multiplication, division, Exit):
+	
+	#include <stdio.h>
+	#include <stdlib.h>
+	int main()
+	{
+		int x,y,o;
+		while(1)
+		{
+			printf("Please choose an operation (serial number):\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Exit program\n:");
+			scanf("%d", &o);
+			switch(o)
+			{
+				case 1:
+					printf("Please enter 2 (integer) operands: ");
+					scanf("%d %d", &x, &y);
+					printf("%d + %d = %d\n", x, y, x+y);
+					break;
+				case 2:
+					printf("Please enter 2 (integer) operands: ");
+					scanf("%d %d", &x, &y);
+					printf("%d - %d = %d\n", x, y, x-y);
+					break;
+				case 3:
+					printf("Please enter 2 (integer) operands: ");
+					scanf("%d %d", &x, &y);
+					printf("%d * %d = %d\n", x, y, x*y);
+					break;
+				case 4:
+					printf("Please enter 2 (integer) operands: ");
+					scanf("%d %d", &x, &y);
+					printf("%d / %d = %d with remainder %d\n", x, y, x/y, x%y);
+					break;
+				case 5:
+					exit(0);
+				default:
+					printf("Invalid option\n");
+			}
+		}
+	}
+	
+3. program to take a day number of the week and display a unique greeting message for that day:
+	
+	#include <stdio.h>
+	#include <conio.h>
+	int main()
+	{
+		int d;
+		printf("Please enter a day number of the week: ");
+		scanf("%d", &d);
+		switch(d)
+		{
+			case 1:
+				printf("Have a Sumptuous Sunday");
+				break;
+			case 2:
+				printf("Have a Merry Monday");
+				break;
+			case 3:
+				printf("Have a Terrific Tuesday");
+				break;
+			case 4:
+				printf("Have a Wonderful Wednesday");
+				break;
+			case 5:
+				printf("Have a Thorough Thursday");
+				break;
+			case 6:
+				printf("Have a Festive Friday");
+				break;
+			case 7:
+				printf("Have a Sweet Saturday");
+				break;
+			default:
+				printf("Invalid day number for a week\n");
+		}
+		getch();
+	}
+
+4. menu driven program to take the 3 sides of a triangle and perform the following options: (check the triangle to be isosceles, right-angled, equilateral, or exit the program)
+	
+	#include <stdio.h>
+	#include <stdlib.h>
+	int main()
+	{
+		int s1,s2,s3,o;
+		while(1)
+		{
+			printf("Please choose what to do (serial number):\n1. Isosceles triangle check\n2. Right-angled triangle check\n3. Equilateral triangle check\n4. Exit program\n:");
+			scanf("%d", &o);
+			switch(o)
+			{
+				case 1:
+					printf("Please enter the 3 sides of your triangle: ");
+					scanf("%d %d %d", &s1, &s2, &s3);
+					if(s1==s2)
+					{
+						if(s1+s2<s3)
+							printf("INVALID TRIANGLE\n");
+						else if(s1!=s3)
+							printf("ISOSCELES\n");
+						else
+							printf("NOT ISOSCELES\n");
+					}
+					else if(s1==s3)
+					{
+						if(s1+s3<s2)
+							printf("INVALID TRIANGLE\n");
+						else if(s1!=s2)
+							printf("ISOSCELES\n");
+						else
+							printf("NOT ISOSCELES\n");
+					}
+					else if(s2==s3)
+					{
+						if(s2+s3<s1)
+							printf("INVALID TRIANGLE\n");
+						else if(s2!=s1)
+							printf("ISOSCELES\n");
+						else
+							printf("NOT ISOSCELES\n");
+					}
+					else
+						printf("NOT ISOSCELES\n");
+					break;
+				case 2:
+					printf("Please enter the 3 sides of your triangle: ");
+					scanf("%d %d %d", &s1, &s2, &s3);
+					if(s1>=s2 && s1>=s3)
+						printf((s2*s2)+(s3*s3)==(s1*s1) ? "RIGHT-ANGLED\n" : "NOT RIGHT-ANGLED\n");
+					else if(s2>=s1 && s2>=s3)
+						printf((s1*s1)+(s3*s3)==(s2*s2) ? "RIGHT-ANGLED\n" : "NOT RIGHT-ANGLED\n");
+					else
+						printf((s1*s1)+(s2*s2)==(s3*s3) ? "RIGHT-ANGLED\n" : "NOT RIGHT-ANGLED\n");
+					break;
+				case 3:
+					printf("Please enter the 3 sides of your triangle: ");
+					scanf("%d %d %d", &s1, &s2, &s3);
+					if (s1==s2 && s2==s3)
+						printf("EQUILATERAL\n");
+					else
+						printf("NOT EQUILATERAL\n");
+					break;
+				case 4:
+					exit(0);
+				default:
+					printf("Invalid option\n");
+			}
+		}
+	}
